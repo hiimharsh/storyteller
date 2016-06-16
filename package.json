@@ -1,0 +1,30 @@
+{
+  "name": "storyteller",
+  "version": "1.0.0",
+  "description": "StoryTeller",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "storyteller"
+  ],
+  "author": "Harsh Thakkar",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.5",
+    "gulp-connect": "^3.2.2",
+    "gulp-copy": "0.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-open": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-webserver": "^0.9.1"
+  }
+}

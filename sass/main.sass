@@ -1,0 +1,122 @@
+// importing style packages
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss"
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins"
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon"
+@import "../bower_components/font-awesome/css/font-awesome.min.css"
+@import "mixins"
+
+// fonts
+@font-face
+  font-family: "Kayak"
+  src: url("../fonts/Kayak.otf")
+
+/* Bootstrap Variables Goes Here */
+
+$brand-primary: #0d9dff !default
+$brand-success: #84ce3c !default
+$brand-warning: #ffec39 !default
+$brand-danger: #fc483f !default
+$brand-info: #000072 !default
+
+$facebook: #3a579d !default
+$google: #dd4d3c !default
+$twitter: #49c8f5 !default
+
+$body-bg: #fff !default
+
+$link-hover-color: black !default
+$link-hover-decoration: none !default
+
+$font-family-sans-serif: "Kayak", "Helvetica", "Helvetica Neue", Helvetica, Arial, sans-serif !default
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+
+*
+  margin: 0 auto
+  padding: 0
+  box-sizing: border-box
+
+  &:hover, &:focus, &:active
+    outline: none !important
+
+body
+  font-family: $font-family-sans-serif
+
+a
+  cursor: pointer
+
+img
+  @include transition(all 300ms ease)
+
+// classes
+.white
+  color: white
+.black
+  color: black
+.white-bg
+  background-color: white
+.black-bg
+  background-color: black
+
+.btn
+  height: 30px
+  font-family: $font-family-sans-serif
+  font-weight: 400
+  @include transition(all 300ms ease)
+  outline: 0 !important
+
+.clearfix
+  overflow: auto
+
+/* Start writing sass here */
+.photo
+  width: 200px
+  height: 200px
+  margin: 20px
+  position: relative
+  display: inline-block
+  overflow: hidden
+
+  .photo-image
+    width: 200px
+    height: 200px
+    display: table-cell
+    vertical-align: middle
+
+    img
+      max-width: 100%
+      max-height: 100%
+      display: block
+      vertical-align: middle
+
+  .photo-details
+    width: 100%
+    height: 100%
+    padding: 20px
+    background-color: rgba(0, 0, 0, 0.4)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    transition: all .2s ease-in-out
+
+    p
+      text-align: center
+      color: white
+
+    p.title
+      font-size: 36px
+      font-weight: bold
+      margin-bottom: 10px
+
+    p.description
+      font-size: 24px
+
+.photo:hover
+  .photo-details
+    opacity: 1
