@@ -45,6 +45,7 @@ body
 
 a
   cursor: pointer
+  color: black
 
 img
   @include transition(all 300ms ease)
@@ -73,16 +74,17 @@ img
 // - HEADER
 header
   min-width: 100%
-  padding: 30px 0 0px 50px
+  padding: 30px 0 30px 50px
   .logo
     h1
       margin: 0
       padding: 5px 10px
       display: inline-block
       border: 3px solid black
+      cursor: pointer
 
 .home
-  padding: 50px 0
+  padding: 20px 0
   .home-blogs
     .blog-post
       width: 80%
@@ -117,3 +119,62 @@ header
           font-weight: bold
         .blog-desc
           font-size: 18px
+
+.blog
+  .blog-image
+    width: 100%
+    height: 800px
+    background-image: url('../img/6.jpg')
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    img
+      width: 100%
+      height: 100%
+
+  .blog-head
+    padding: 50px 0
+    .blog-tag
+      padding: 5px 12px
+      font-weight: bold
+      border: 2px solid #777
+      border-radius: 2px
+    .blog-title
+      margin: 50px 0
+      font-size: 80px
+    .blog-time
+      font-size: 18px
+
+  .user-details
+    width: 300px
+    border: 2px solid #ccc
+    border-radius: 5px
+    .user-image
+      margin: 30px 50px
+      img
+        width: 100%
+        height: 100%
+    .user-name
+      margin: 20px 0
+      font-size: 24px
+    .user-social
+      ul
+        width: 100%
+        border-top: 2px solid #ccc
+        border-bottom: 2px solid #ccc
+        li
+          width: 32%
+          padding: 10px 0
+          display: inline-block
+          a
+            font-size: 18px
+        li + li
+          border-left: 2px solid #ccc
+
+  .blog-detail
+    h4
+      margin: 0
+      font-size: 40px
+    p
+      margin: 10px 0 50px
+      font-size: 24px
