@@ -1,12 +1,24 @@
+var apiurl = "http://localhost:3000/";
+
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap'])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, $http) {
   $scope.template = TemplateService.changecontent("home");
   $scope.menutitle = NavigationService.makeactive("Home");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
   TemplateService.footer = "";
+
+  $http.get(apiurl + "getallusers")
+  .success(function(data) {
+      $scope.allUsers = data[0].user_blog;
+      $scope.userProfile = data[0].user_profilepic;
+      console.log(data);
+  })
+  .error(function(data) {
+      console.log('Error: ' + data);
+  });
 })
 
 .controller('BlogCtrl', function($scope, TemplateService, NavigationService, $timeout) {

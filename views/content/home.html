@@ -4,221 +4,22 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
+
+          <div class="col-md-3" ng-repeat="user in allUsers">
             <div class="blog-post">
               <div class="blog-image">
-                <img src="img/1.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
+                <img ng-src="{{userProfile}}" alt="" class="img-responsive" />
+                <span class="blog-tag text-uppercase">{{user.blog_category}}</span>
               </div>
               <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
+                <p class="blog-title">{{user.blog_title}}</p>
+                <span class="blog-desc">{{user.blog_description}}</span>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/2.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/3.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/4.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/1.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/2.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/3.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/4.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/1.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/2.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/3.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/4.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/1.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/2.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/3.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="img/4.jpg" alt="" class="img-responsive" />
-                <span class="blog-tag text-uppercase">Science</span>
-              </div>
-              <div class="blog-info">
-                <p class="blog-title">Hello World Blog</p>
-                <span class="blog-desc">This is my first blog</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
     </div>
+    
   </div>
 </section>
